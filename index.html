@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Recommender</title>
+    <link rel="stylesheet" href="style.css?v=2" />
+</head>
+
+<body>
+    <div class="app">
+        <h1>🎬 Movie Recommender</h1>
+
+        <div class="controls">
+            <span>Select a movie:</span>
+            <select id="movieSelect" onchange="showRecommendations()"></select>
+            <span class="separator">OR</span>
+            <button onclick="surpriseMe()">Surprise Me 🎲</button>
+        </div>
+
+        <!-- Main Movie (Hero) -->
+        <div id="hero" class="hero"></div>
+
+        <!-- Recommended Movies -->
+        <h2 id="recTitle" class="section-title">Recommended Movies</h2>
+        <div id="cards" class="card-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
